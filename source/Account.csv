@@ -1,0 +1,31 @@
+﻿Account Number,Customer Name,Start Date,End Date,Self-Service Installs,Customer Location,Tech Order,Internet Service,Port IN Cable,Streaming,Mobile,Port In Mobile,Land Line
+12345678,John Doe,3/2/2024,1/1/9999,Y,Charlotte,823,200 MBPS,AT&T,Sports,Basic,AT&T,N
+12345679,Jane Smith,1/8/2024,1/1/9999,N,Saint Louis,0,1 GB,Broadband,News,Unlimited,T Mobile,Y
+12345680,Jim Brown,1/14/2024,4/5/2024,Y,Connecticut ,0,500 MBPS,Verizon,Sprots + Disney,Unlimited,Verizon,N
+12345681,Emily Davis,1/20/2024,1/1/9999,N,Tampa,223,300 MBPS,T Mobile,Package1,Unlimited Plus,T Mobile,Y
+12345682,Michael Wilson,1/26/2024,1/1/9999,Y,Dallas,0,200 MBPS,AT&T,Package 2,Basic,AT&T,N
+12345683,Jessica Johnson,2/1/2024,1/1/9999,N,Charlotte,0,1 GB,Broadband,Sports,Unlimited,NA,Y
+12345684,David Lee,2/7/2024,1/1/9999,Y,Saint Louis,0,500 MBPS,Verizon,News,Unlimited,Verizon,N
+12345685,Amy White,2/13/2024,1/1/9999,N,Connecticut ,0,300 MBPS,T Mobile,Sprots + Disney,Unlimited Plus,T Mobile,Y
+12345686,Chris Harris,2/19/2024,1/1/9999,Y,Tampa,0,200 MBPS,T Mobile,Package1,Basic,NA,N
+12345687,Karen Clark,2/25/2024,1/1/9999,N,Dallas,0,1 GB,AT&T,Package 2,Unlimited,AT&T,Y
+12345688,John Doe,3/2/2024,6/5/2024,Y,Charlotte,1123,500 MBPS,Broadband,Sports,Unlimited,AT&T,N
+12345689,Jane Smith,3/8/2024,1/1/9999,N,Saint Louis,0,300 MBPS,Verizon,News,Unlimited Plus,T Mobile,Y
+12345690,Jim Brown,3/14/2024,1/1/9999,Y,Connecticut ,0,200 MBPS,T Mobile,Sprots + Disney,Basic,Verizon,N
+12345691,Emily Davis,3/20/2024,1/1/9999,N,Tampa,0,1 GB,AT&T,Package1,Unlimited,T Mobile,Y
+12345692,Michael Wilson,3/26/2024,1/1/9999,Y,Dallas,0,500 MBPS,Broadband,Package 2,Unlimited,NA,N
+12345693,Jessica Johnson,6/1/2024,1/1/9999,N,Charlotte,0,300 MBPS,Verizon,Sports,Unlimited Plus,AT&T,Y
+12345694,David Lee,4/7/2024,1/1/9999,Y,Saint Louis,0,200 MBPS,T Mobile,News,Basic,T Mobile,N
+12345695,Amy White,4/13/2024,6/10/2024,N,Connecticut ,1823,1 GB,AT&T,Sprots + Disney,Unlimited,Verizon,Y
+12345696,Chris Harris,4/19/2024,1/1/9999,Y,Tampa,0,500 MBPS,Broadband,Package1,Unlimited,T Mobile,N
+12345697,Karen Clark,4/25/2024,1/1/9999,N,Dallas,0,300 MBPS,Verizon,Package 2,Unlimited Plus,NA,Y
+12345698,John Doe,6/5/2024,1/1/9999,Y,Charlotte,0,200 MBPS,T Mobile,Sports,Basic,AT&T,N
+12345700,Jane Smith,6/7/2024,1/1/9999,N,Saint Louis,0,1 GB,AT&T,News,Unlimited,T Mobile,Y
+12345699,Jim Brown D,5/13/2024,1/1/9999,Y,Connecticut ,0,500 MBPS,Broadband,Sprots + Disney,Unlimited,Verizon,N
+12345701,Emily Davis,5/19/2024,1/1/9999,N,Tampa,0,300 MBPS,Verizon,Package1,Unlimited Plus,T Mobile,Y
+12345702,Michael Wilson,6/12/2024,1/1/9999,Y,Dallas,0,200 MBPS,T Mobile,Package 2,Basic,NA,N
+12345703,Jessica Johnson,6/15/2024,1/1/9999,N,Charlotte,0,1 GB,AT&T,Sports,Unlimited,AT&T,Y
+12345704,David Lee,6/6/2024,1/1/9999,Y,Saint Louis,0,500 MBPS,Broadband,News,Unlimited,T Mobile,N
+12345705,Amy White,6/12/2024,1/1/9999,N,Connecticut ,0,300 MBPS,Verizon,Sprots + Disney,Unlimited Plus,Verizon,Y
+12345706,Chris Harris,6/18/2024,1/1/9999,Y,Tampa,0,200 MBPS,T Mobile,Package1,Basic,T Mobile,N
+12345707,Jim Brown S,6/20/2024,1/1/9999,N,Dallas,0,1 GB,Verizon,Package 2,Unlimited,NA,Y

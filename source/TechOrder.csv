@@ -1,0 +1,31 @@
+﻿Tech Order,Enter Date,Completion Date,Account Number,Truck Roll,Resolved  (Y) / Postponed (N),Disconnect Reason,Technician Name,Tech Location
+123,3/14/2024,3/15/2024,12345678,Y,N,Speed Issue - Not getting as expected Speed,Karen Clark,Charlotte
+223,3/15/2024,3/16/2024,12345679,N,Y,Moved to different City,John Doe,Saint Louis
+323,3/16/2024,3/17/2024,12345680,Y,Y,Price is too high compared to competitor,Jane Smith,Connecticut 
+423,3/17/2024,3/18/2024,12345681,Y,N,Speed Issue - Not getting as expected Speed,Jim Brown,Tampa
+523,3/18/2024,3/19/2024,12345682,Y,Y,Moved to different City,Emily Davis,Dallas
+623,3/19/2024,3/20/2024,12345683,Y,Y,Price is too high compared to competitor,Karen Clark,Charlotte
+723,3/20/2024,3/21/2024,12345684,N,Y,Speed Issue - Not getting as expected Speed,John Doe,Saint Louis
+823,4/8/2024,4/10/2024,12345678,Y,N,Speed Issue - Not getting as expected Speed,Jane Smith S,Charlotte
+923,4/9/2024,4/11/2024,12345686,Y,Y,Price is too high compared to competetior,Jim Brown,Tampa
+1023,4/10/2024,4/12/2024,12345687,Y,Y,Speed Issue - Not getting as expected Speed,Emily Davis,Dallas
+1123,4/11/2024,4/13/2024,12345688,Y,N,Speed Issue - Not getting as expected Speed,Karen Clark,Charlotte
+1223,4/12/2024,4/14/2024,12345689,N,Y,Price is too high compared to competitor,John Doe,Saint Louis
+1323,4/13/2024,4/15/2024,12345690,Y,Y,Speed Issue - Not getting as expected Speed,Jane Smith,Connecticut 
+1423,4/14/2024,4/16/2024,12345691,Y,Y,Moved to different City,Jim Brown,Tampa
+1523,5/12/2024,5/15/2024,12345692,Y,N,Speed Issue - Not getting as expected Speed,Emily Davis K,Charlotte
+1623,5/13/2024,5/16/2024,12345693,Y,N,Speed Issue - Not getting as expected Speed,Karen Clark,Charlotte
+1723,5/14/2024,5/17/2024,12345694,N,Y,Moved to different City,John Doe,Saint Louis
+1823,5/15/2024,5/18/2024,12345695,Y,N,Speed Issue - Not getting as expected Speed,Jane Smith,Connecticut 
+1923,5/16/2024,5/19/2024,12345696,Y,Y,Speed Issue - Not getting as expected Speed,Jim Brown,Tampa
+2023,5/17/2024,5/20/2024,12345697,Y,N,Moved to different City,Emily Davis,Charlotte
+2123,5/18/2024,5/21/2024,12345698,N,Y,Price is too high compared to competitor,Karen Clark,Saint Louis
+2223,5/19/2024,5/22/2024,12345699,Y,N,Speed Issue - Not getting as expected Speed,John Doe,Connecticut 
+2323,5/20/2024,5/23/2024,12345700,Y,N,Moved to different City,Jane Smith,Tampa
+2423,5/21/2024,5/24/2024,12345701,Y,Y,Price is too high compared to competitor,Jim Brown,Dallas
+2523,5/22/2024,5/25/2024,12345702,Y,Y,Speed Issue - Not getting as expected Speed,Emily Davis,Charlotte
+2623,5/23/2024,5/26/2024,12345703,N,Y,Moved to different City,Karen Clark,Saint Louis
+2723,5/24/2024,5/27/2024,12345699,Y,N,Price is too high compared to competitor,John Doe ,Connecticut 
+2823,5/25/2024,5/28/2024,12345705,Y,Y,Speed Issue - Not getting as expected Speed,Jane Smith,Tampa
+2923,5/26/2024,5/29/2024,12345706,Y,Y,Moved to different City,Jim Brown,Charlotte
+3023,5/27/2024,5/30/2024,12345707,Y,N,Price is too high compared to competitor,Emily Davis,Saint Louis
