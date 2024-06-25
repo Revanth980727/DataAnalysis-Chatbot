@@ -26,7 +26,7 @@ FOR sql.py:
 
     a. Create a Database
 
-    b. Create a table by importing .csv file into mysql workbench using 'Table Data Import Wizard'
+    b. Create a table by importing .csv file into mysql workbench using 'Table Data Import Wizard' (by right clicking on tables in the database)
 
     c. Power_PlantsDB: Power_Plants_of_New_Jersey.csv; 
         Overburdened_CommunitiesDB: Overburdened_Communities_under_the_New_Jersey_Environmental_Justice_Law_2021.csv
