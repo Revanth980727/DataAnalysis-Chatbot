@@ -1,0 +1,188 @@
+{
+    "power_plants": {
+      "name": "power_plants",
+      "description": "Contains information about power plants and their characteristics",
+      "tables": {
+        "name": "power_plants_data",
+        "description": "Contains information about power plants and their characteristics",
+        "columns": [
+        {"name": "OBJECTID", "type": "INTEGER", "description": "Unique identifier for each record"},
+        {"name": "Plant_Code", "type": "VARCHAR", "description": "Unique code assigned to each power plant"},
+        {"name": "Plant_Name", "type": "VARCHAR", "description": "Name of the power plant"},
+        {"name": "Utility_Name", "type": "VARCHAR", "description": "Name of the utility company operating the plant"},
+        {"name": "Site_ID", "type": "VARCHAR", "description": "Identifier for the plant site"},
+        {"name": "Air_PI_Number", "type": "VARCHAR", "description": "Air permit identification number"},
+        {"name": "City", "type": "VARCHAR", "description": "City where the plant is located"},
+        {"name": "County", "type": "VARCHAR", "description": "County where the plant is located"},
+        {"name": "State_Name", "type": "VARCHAR", "description": "State where the plant is located"},
+        {"name": "Street_Address", "type": "VARCHAR", "description": "Street address of the plant"},
+        {"name": "Primary_Source", "type": "VARCHAR", "description": "Primary energy source used by the plant"},
+        {"name": "Install_MW", "type": "DECIMAL", "description": "Installed capacity in megawatts"},
+        {"name": "Total_MV", "type": "DECIMAL", "description": "Total megavolt capacity"},
+        {"name": "Source_Description", "type": "TEXT", "description": "Description of the energy source"},
+        {"name": "Technical_Description", "type": "TEXT", "description": "Technical details of the plant"},
+        {"name": "Source", "type": "VARCHAR", "description": "Source of the data"},
+        {"name": "Period", "type": "DATE", "description": "Reporting period for the data"},
+        {"name": "Latitude", "type": "DECIMAL", "description": "Latitude coordinate of the plant"},
+        {"name": "Longitude", "type": "DECIMAL", "description": "Longitude coordinate of the plant"},
+        {"name": "EDC", "type": "VARCHAR", "description": "Electric Distribution Company"},
+        {"name": "Grid_Supply", "type": "VARCHAR", "description": "Information about grid supply"},
+        {"name": "Data_Miner_Report_Link", "type": "VARCHAR", "description": "Link to the data miner report"},
+        {"name": "GLOBALID", "type": "VARCHAR", "description": "Global identifier for the record"}
+      ]
+    }
+},
+
+    "overburdened_communities": {
+      "name": "overburdened_communities",
+      "description": "Contains demographic information for block groups including poverty, minority, and language proficiency data",
+      "tables": {
+        "name": "census_data",
+        "description": "Contains demographic information for block groups including poverty, minority, and language proficiency data",
+        "columns": [
+        {"name": "OBJECTID", "type": "INTEGER", "description": "Unique identifier for each record"},
+        {"name": "Block_Group_Identifier", "type": "VARCHAR", "description": "Identifier for the block group"},
+        {"name": "Population_For_Poverty", "type": "INTEGER", "description": "Population considered for poverty calculations"},
+        {"name": "Population_Under_2Times_Poverty", "type": "INTEGER", "description": "Population in households under 2 times poverty level"},
+        {"name": "Percent_Low_Income", "type": "DECIMAL", "description": "Percentage of low income population"},
+        {"name": "Total_Population", "type": "INTEGER", "description": "Total population in the block group"},
+        {"name": "Population_Not_Hispanic_Latino", "type": "INTEGER", "description": "Population not identifying as Hispanic or Latino"},
+        {"name": "Total_Minority", "type": "INTEGER", "description": "Total minority population"},
+        {"name": "Percent_Minority", "type": "DECIMAL", "description": "Percentage of minority population"},
+        {"name": "Total_Households", "type": "INTEGER", "description": "Total number of households"},
+        {"name": "Households_Limited_English", "type": "INTEGER", "description": "Households with limited English proficiency"},
+        {"name": "Percent_Limited_English", "type": "DECIMAL", "description": "Percentage of households with limited English proficiency"},
+        {"name": "Overburdened_Community_Criteria", "type": "VARCHAR", "description": "Criteria for overburdened community classification"},
+        {"name": "Block_Group_Tribal", "type": "VARCHAR", "description": "Tribal information for the block group"},
+        {"name": "Block_Group_County_Subdivision", "type": "VARCHAR", "description": "County subdivision of the block group"},
+        {"name": "County", "type": "VARCHAR", "description": "County name"},
+        {"name": "Municipality", "type": "VARCHAR", "description": "Municipality name"},
+        {"name": "Municipality_Code", "type": "VARCHAR", "description": "Code for the municipality"},
+        {"name": "Split_Block_Group", "type": "VARCHAR", "description": "Indicator if the block group is split"},
+        {"name": "Split_Municipality", "type": "VARCHAR", "description": "Indicator if the municipality is split"},
+        {"name": "GLOBALID", "type": "VARCHAR", "description": "Global identifier for the record"},
+        {"name": "Shape__Area", "type": "DECIMAL", "description": "Area of the shape"},
+        {"name": "Shape__Length", "type": "DECIMAL", "description": "Length of the shape"}
+      ]
+    }
+},
+    "precipitation": {
+    "name": "precipitation",
+    "description": "Contains monthly and annual precipitation data from 1895 to 2024",
+    "tables": {
+        "name": "precipitation_data",
+        "description": "Contains monthly and annual precipitation data from 1895 to 2024",
+        "columns": [
+      {"name": "Year", "type": "INTEGER", "description": "Year of the precipitation data"},
+      {"name": "Jan", "type": "DECIMAL", "description": "Precipitation in January"},
+      {"name": "Feb", "type": "DECIMAL", "description": "Precipitation in February"},
+      {"name": "Mar", "type": "DECIMAL", "description": "Precipitation in March"},
+      {"name": "Apr", "type": "DECIMAL", "description": "Precipitation in April"},
+      {"name": "May", "type": "DECIMAL", "description": "Precipitation in May"},
+      {"name": "Jun", "type": "DECIMAL", "description": "Precipitation in June"},
+      {"name": "Jul", "type": "DECIMAL", "description": "Precipitation in July"},
+      {"name": "Aug", "type": "DECIMAL", "description": "Precipitation in August"},
+      {"name": "Sep", "type": "DECIMAL", "description": "Precipitation in September"},
+      {"name": "Oct", "type": "DECIMAL", "description": "Precipitation in October"},
+      {"name": "Nov", "type": "DECIMAL", "description": "Precipitation in November"},
+      {"name": "Dec", "type": "DECIMAL", "description": "Precipitation in December"},
+      {"name": "Annual", "type": "DECIMAL", "description": "Total annual precipitation"}
+    ]
+  }
+},
+  "telecom_data": {
+    "name": "telecom_data",
+    "description": "Database containing customer service and technical support information",
+    "tables": {
+      "techorder": {
+        "name": "techorder",
+        "description": "Contains information about technical orders submitted to the company",
+        "columns": [
+          {"name": "Tech_Order", "type": "VARCHAR", "description": "Unique identifier for the technical order"},
+          {"name": "Enter_Date", "type": "DATE", "description": "Date when the order was entered into the system"},
+          {"name": "Completion_Date", "type": "DATE", "description": "Date when the order was completed"},
+          {"name": "Account_Number", "type": "VARCHAR", "description": "Customer's account number"},
+          {"name": "Truck_Roll", "type": "BOOLEAN", "description": "Indicates if a technician was dispatched (true) or not (false)"},
+          {"name": "Resolved_Or_Postponed", "type": "CHAR(1)", "description": "Y if resolved, N if postponed"},
+          {"name": "Disconnect_Reason", "type": "VARCHAR", "description": "Reason for disconnection, if applicable"},
+          {"name": "Technician_Name", "type": "VARCHAR", "description": "Name of the technician assigned to the order"},
+          {"name": "Tech_Location", "type": "VARCHAR", "description": "Location or area of the technician"}
+        ]
+      },
+      "agents": {
+        "name": "agents",
+        "description": "Contains information about customer service agents",
+        "columns": [
+          {"name": "AgentKey", "type": "INTEGER", "description": "Unique identifier for the agent"},
+          {"name": "Agent_Name", "type": "VARCHAR", "description": "Name of the agent"},
+          {"name": "Start_Date", "type": "DATE", "description": "Date when the agent started working"},
+          {"name": "End_Date", "type": "DATE", "description": "Date when the agent stopped working (if applicable)"},
+          {"name": "Agent_Work_Location", "type": "VARCHAR", "description": "Location where the agent works"}
+        ]
+      },
+      "calldetails": {
+        "name": "calldetails",
+        "description": "Contains details about customer calls",
+        "columns": [
+          {"name": "CallIDSK", "type": "INTEGER", "description": "Unique identifier for the call"},
+          {"name": "DateSK", "type": "INTEGER", "description": "Date surrogate key"},
+          {"name": "Call_Start_Time", "type": "DATETIME", "description": "Time when the call started"},
+          {"name": "Call_End_Time", "type": "DATETIME", "description": "Time when the call ended"},
+          {"name": "Call_Reason", "type": "VARCHAR", "description": "Reason for the customer's call"},
+          {"name": "Tech_Order_Flag", "type": "CHAR(1)", "description": "Y if the call resulted in a tech order, N otherwise"},
+          {"name": "Tech_Order_Number", "type": "VARCHAR", "description": "Tech order number if applicable"}
+        ]
+      },
+      "facttable": {
+        "name": "facttable",
+        "description": "Contains facts about customer calls and related information",
+        "columns": [
+          {"name": "CallIDSK", "type": "INTEGER", "description": "Unique identifier for the call"},
+          {"name": "Account_Number", "type": "VARCHAR", "description": "Customer's account number"},
+          {"name": "AgentKey", "type": "INTEGER", "description": "Identifier for the agent who handled the call"},
+          {"name": "OrgKMASK", "type": "INTEGER", "description": "Organization key (purpose unclear from provided information)"},
+          {"name": "DateSK", "type": "INTEGER", "description": "Date surrogate key"},
+          {"name": "Tech_Order", "type": "VARCHAR", "description": "Tech order number if applicable"},
+          {"name": "Answered_Calls", "type": "INTEGER", "description": "Number of answered calls"},
+          {"name": "Call_Duration", "type": "DECIMAL", "description": "Duration of the call in minutes"},
+          {"name": "Talk_Time", "type": "DECIMAL", "description": "Talk time during the call in minutes"},
+          {"name": "Hold_Time", "type": "DECIMAL", "description": "Hold time during the call in minutes"}
+        ]
+      },
+      "outage": {
+        "name": "outage",
+        "description": "Contains information about service outages",
+        "columns": [
+          {"name": "Account_Number", "type": "VARCHAR", "description": "Customer's account number"},
+          {"name": "Date", "type": "DATE", "description": "Date of the outage"},
+          {"name": "Outage_Start_Time", "type": "DATETIME", "description": "Time when the outage started"},
+          {"name": "Outage_End_Time", "type": "DATETIME", "description": "Time when the outage ended"},
+          {"name": "Customer_Location", "type": "VARCHAR", "description": "Location of the customer affected by the outage"},
+          {"name": "Outage_Reason", "type": "VARCHAR", "description": "Reason for the outage"},
+          {"name": "Informed_By_Mail_SMS", "type": "BOOLEAN", "description": "Whether the customer was informed by mail or SMS"},
+          {"name": "First_Informed_Date", "type": "DATE", "description": "Date when the customer was first informed"},
+          {"name": "Second_Informed_Date", "type": "DATE", "description": "Date when the customer was informed for the second time"}
+        ]
+      },
+      "account": {
+        "name": "account",
+        "description": "Contains customer account information",
+        "columns": [
+          {"name": "Account_Number", "type": "VARCHAR", "description": "Unique identifier for the customer account"},
+          {"name": "Customer_Name", "type": "VARCHAR", "description": "Name of the customer"},
+          {"name": "Start_Date", "type": "DATE", "description": "Date when the account was created"},
+          {"name": "End_Date", "type": "DATE", "description": "Date when the account was closed (if applicable)"},
+          {"name": "Self_Service_Installs", "type": "BOOLEAN", "description": "Whether the customer has self-service installations"},
+          {"name": "Customer_Location", "type": "VARCHAR", "description": "Location of the customer"},
+          {"name": "Tech_Order", "type": "VARCHAR", "description": "Tech order associated with the account"},
+          {"name": "Internet_Service", "type": "BOOLEAN", "description": "Whether the customer has internet service"},
+          {"name": "Port_IN_Cable", "type": "BOOLEAN", "description": "Whether the customer has ported in cable service"},
+          {"name": "Streaming", "type": "BOOLEAN", "description": "Whether the customer has streaming service"},
+          {"name": "Mobile", "type": "BOOLEAN", "description": "Whether the customer has mobile service"},
+          {"name": "Port_In_Mobile", "type": "BOOLEAN", "description": "Whether the customer has ported in mobile service"},
+          {"name": "Land_Line", "type": "BOOLEAN", "description": "Whether the customer has land line service"}
+        ]
+      }
+    }
+  }
+}

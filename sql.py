@@ -10,11 +10,14 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import plotly.express as px
 import pandas as pd
+import functools
 
 # Hardcoded database credentials
 DB_HOST = 'HOST'
 DB_USER = 'USER'
 DB_PASSWORD = 'PASSWORD'
+
+@functools.lru_cache(maxsize=1)
 
 # Function to get database metadata
 def get_db_metadata(host, user, password):
@@ -58,6 +61,29 @@ def get_db_metadata(host, user, password):
         return {}
 
     return metadata
+
+# Function to load JSON metadata
+def load_json_metadata(file_path):
+    try:
+        with open('metadata.json', 'r') as file:
+            json_metadata = json.load(file)
+        return json_metadata
+    except Exception as e:
+        st.error(f"Error loading JSON metadata: {e}")
+        return {}
+
+# Function to merge JSON metadata with dynamic metadata
+def merge_metadata(dynamic_metadata, json_metadata):
+    for schema, tables in json_metadata.items():
+        if schema not in dynamic_metadata:
+            dynamic_metadata[schema] = tables
+        else:
+            for table, columns in tables.items():
+                if table not in dynamic_metadata[schema]:
+                    dynamic_metadata[schema][table] = columns
+                else:
+                    dynamic_metadata[schema][table] = list(set(dynamic_metadata[schema][table] + columns))
+    return dynamic_metadata
 
 # Summarize metadata to reduce token usage
 def summarize_metadata(metadata):
@@ -185,22 +211,14 @@ def validate_columns(used_elements, metadata):
     used_elements["columns"] = valid_columns
     return used_elements
 
+
 # Function to plot data visualization
-def plot_data_visualization(df, user_input):
+def plot_data_visualization(df, user_input, chart_type):
     st.subheader("Data Visualization")
     
     columns = df.columns.tolist()
     x_axis = st.selectbox("Select X-axis", options=columns)
     y_axis = st.selectbox("Select Y-axis", options=columns)
-    
-    # Check for specific keywords in the user's input
-    chart_type = "scatter"
-    if "bar chart" in user_input.lower():
-        chart_type = "bar"
-    elif "pie chart" in user_input.lower():
-        chart_type = "pie"
-    elif "line chart" in user_input.lower():
-        chart_type = "line"
     
     # Create the corresponding chart type using Plotly Express
     if chart_type == "scatter":
@@ -226,7 +244,10 @@ with tabs[0]:
 
     if st.button("Submit Query"):
         if user_query:
-            metadata = get_db_metadata(DB_HOST, DB_USER, DB_PASSWORD)
+            dynamic_metadata = get_db_metadata(DB_HOST, DB_USER, DB_PASSWORD)
+            json_metadata = load_json_metadata('metadata.json')
+            metadata = merge_metadata(dynamic_metadata, json_metadata)
+
             if metadata:
                 summarized_metadata = summarize_metadata(metadata)
                 sql_query = generate_sql_query(user_query, summarized_metadata)
@@ -316,4 +337,8 @@ with tabs[2]:
         columns = st.session_state.columns
         sql_query = st.session_state.sql_query
         df = pd.DataFrame(result, columns=columns)
-        plot_data_visualization(df, user_query)
+        
+        # Add a dropdown for chart type selection
+        chart_type = st.selectbox("Select Chart Type", options=["line", "bar", "pie", "scatter"])
+        
+        plot_data_visualization(df, user_query, chart_type)
